@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+>
+
+<h:head>
+    <h:outputStylesheet library="css" name="style.css"/>
+</h:head>
+
+<h:body>
+
+    <div class="wrapper">
+
+        <div class = "mainheader">
+        <div class = "menu" >
+            <ui:insert name="menu" >
+                <ui:include src="/template/common/commonMenu.xhtml" />
+            </ui:insert>
+        </div>
+
+        <div class = "header" >
+            <ui:insert name="header" >
+                <ui:include src="/template/common/commonHeader.xhtml" />
+            </ui:insert>
+        </div>
+
+        </div>
+
+        <div class = "middle">
+            <div class="container">
+                <div class = "content">
+                    <ui:insert name="content" >
+                        <ui:include src="/template/common/commonContent.xhtml" />
+                    </ui:insert>
+                </div>
+            </div>
+        <div class = "left-sidebar" >
+            <ui:insert name="leftbar" >
+                <ui:include src="/template/common/commonLeftBar.xhtml" />
+            </ui:insert>
+        </div>
+        <div class = "right-sidebar" >
+            <ui:insert name="rightbar" >
+                <ui:include src="/template/common/commonRightBar.xhtml" />
+            </ui:insert>
+        </div>
+        </div>
+
+      <div class = "footer">
+            <ui:insert name="footer" >
+                <ui:include src="/template/common/commonFooter.xhtml" />
+            </ui:insert>
+        </div>
+
+    </div>
+
+</h:body>
+</html>

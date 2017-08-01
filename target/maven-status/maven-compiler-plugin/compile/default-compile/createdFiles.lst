@@ -1,0 +1,10 @@
+com\journaldev\jpa\data\Order.class
+com\journaldev\jpa\data\CraneScale.class
+com\journaldev\prime\faces\beans\BucketBean.class
+com\journaldev\prime\faces\beans\ButtonView.class
+com\journaldev\prime\faces\beans\MainBean.class
+com\journaldev\prime\faces\beans\SliderView.class
+com\journaldev\spring\service\OrderService.class
+com\journaldev\spring\service\CraneScaleService.class
+com\journaldev\jpa\data\BucketDTO.class
+com\journaldev\prime\faces\beans\ButtonViewx.class
