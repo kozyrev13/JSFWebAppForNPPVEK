@@ -7,3 +7,10 @@ CREATE TABLE `crane_scale` (
         `length` INT DEFAULT NULL,
         PRIMARY KEY (`id`)
         ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+CREATE TABLE `orders` (
+        `id` INT NOT NULL AUTO_INCREMENT,
+        `phone_number` VARCHAR(45) NOT NULL,
+        `order_description` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`))
+        ENGINE = InnoDB
+        DEFAULT CHARACTER SET = utf8;
