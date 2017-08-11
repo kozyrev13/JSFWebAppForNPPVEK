@@ -15,6 +15,8 @@
 
     <ui:composition template="/template/common/commonLayout.xhtml">
         <ui:define name="content">
+            <h1> Крановые весы ВЕК (Украина). Научно-производственное предприятие ВЕК.</h1>
+            <br/>
             <h:form>
                 <p:growl id="cranscalemessage"/>
                 <p:dataScroller value="#{mainBean.craneScaleList}" var="scale" chunkSize="10">
@@ -29,22 +31,22 @@
                         <p:outputPanel>
                             <h:panelGrid columns="2" cellpadding="5">
 
-                                <h:outputText value="Title:"/>
+                                <h:outputText value="Название:"/>
                                 <h:outputText value="#{scale.title}" style="font-weight: bold"/>
 
-                                <h:outputText value="Price:"/>
+                                <h:outputText value="Цена:"/>
                                 <h:outputText value="#{scale.price}" style="font-weight: bold"/>
 
-                                <h:outputText value="Cargo Capacity:"/>
+                                <h:outputText value="Грузоподъемность:"/>
                                 <h:outputText value="#{scale.cargoCapacity}" style="font-weight: bold"/>
 
-                                <h:outputText value="Height:"/>
+                                <h:outputText value="Высота:"/>
                                 <h:outputText value="#{scale.height}" style="font-weight: bold"/>
 
-                                <h:outputText value="Length:"/>
+                                <h:outputText value="Длина:"/>
                                 <h:outputText value="#{scale.length}" style="font-weight: bold"/>
 
-                                <h:outputText value="Width:"/>
+                                <h:outputText value="Ширина:"/>
                                 <h:outputText value="#{scale.width}" style="font-weight: bold"/>
 
 
