@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+>
+<h:body>
+
+    <ui:composition template="/template/common/commonLayout.xhtml">
+        <ui:define name="content">
+            <h2>Страница администратора</h2>
+            <p:dataTable var="order" value="#{adminBean.orderList}">
+                <p:column headerText="Id" width="30">
+                    <h:outputText value="#{order.id}" />
+                </p:column>
+
+                <p:column headerText="Заказ">
+                    <h:outputText value="#{order.orderDescription}" />
+                </p:column>
+
+                <p:column headerText="Телефон" width="100">
+                    <h:outputText value="#{order.pnoneNumber}" />
+                </p:column>
+
+            </p:dataTable>
+        </ui:define>
+    </ui:composition>
+
+</h:body>
+
+</html>

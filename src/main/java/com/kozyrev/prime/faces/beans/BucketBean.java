@@ -61,13 +61,10 @@ public class BucketBean {
     }
 
     public String dtoArrayListToString(){
-        String s ="";
-        StringBuilder sb = new StringBuilder(s);
+        StringBuilder sb = new StringBuilder();
         for (BucketDTO dto: dtoArrayList){
             sb.append(dto.toString());
-            sb.append("\n");
-        }
-        sb.append("----------------------------------------\n");
+            }
         sb.append("Итого: ");
         sb.append(sum);
         return sb.toString();
@@ -89,7 +86,7 @@ public class BucketBean {
 
     }
 
-    public String registrAction(int i) {
+    public String registrAction() {
         Order order = new Order();
         order.setPnoneNumber(this.getPhone());
         order.setOrderDescription(this.dtoArrayListToString());

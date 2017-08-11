@@ -39,7 +39,7 @@
                 <p:inputMask id="phone" value="#{bucketBean.phone}" mask="(999) 999-9999" required="true" requiredMessage="Неверно введен номер" style="width: 100px">
                     <f:validateLength minimum="14" maximum="14"/>
                 </p:inputMask>
-                <p:commandButton value="Оформить заказ" id="order" actionListener="#{bucketBean.registrAction(1)}" ajax="false" update="messages"/>
+                <p:commandButton value="Оформить заказ" id="order" actionListener="#{bucketBean.registrAction}" ajax="false" update="messages"/>
             </h:panelGrid>
 
         </p:outputPanel>

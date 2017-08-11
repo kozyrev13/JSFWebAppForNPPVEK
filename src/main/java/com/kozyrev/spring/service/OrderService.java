@@ -6,6 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import java.util.List;
 
 @Component
 public class OrderService {
@@ -18,6 +20,12 @@ public class OrderService {
 
     public void setEm(EntityManager em) {
         this.em = em;
+    }
+
+    @Transactional
+    public List<Order> getList(){
+        Query query = em.createNativeQuery("SELECT * FROM orders",Order.class);
+        return query.getResultList();
     }
 
     @Transactional
