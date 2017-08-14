@@ -2,6 +2,7 @@ package com.kozyrev.spring.service;
 
 import com.kozyrev.jpa.data.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -9,8 +10,9 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.List;
 
-@Component
+@Service
 public class OrderService {
+
     @PersistenceContext
     private EntityManager em;
 
@@ -24,7 +26,7 @@ public class OrderService {
 
     @Transactional
     public List<Order> getList(){
-        Query query = em.createNativeQuery("SELECT * FROM orders",Order.class);
+        Query query = em.createNativeQuery("SELECT * FROM orders ORDER BY id DESC ",Order.class);
         return query.getResultList();
     }
 

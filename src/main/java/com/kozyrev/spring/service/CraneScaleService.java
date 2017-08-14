@@ -3,6 +3,7 @@ package com.kozyrev.spring.service;
 import com.kozyrev.jpa.data.CraneScale;
 import com.kozyrev.prime.faces.beans.SliderBean;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -10,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import java.util.List;
 
-@Component
+@Service
 public class CraneScaleService {
 
     @PersistenceContext

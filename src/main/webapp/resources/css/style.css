@@ -14,6 +14,7 @@ body {
 .mainheader{
     text-align: center;
     height: 470px;
+
 }
 /* Header
 -----------------------------------------------------------------------------*/
@@ -27,6 +28,7 @@ body {
 -----------------------------------------------------------------------------*/
 
 .menu {
+    min-width: 1280px;
     height: 70px;
     width: 100%;
     border-bottom: 1px solid #D0D0D0;
@@ -47,6 +49,30 @@ body {
     font-size: 20px;
     float: left;
 }
+
+#auth {
+    margin-left: 350px;
+    background: whitesmoke;
+    font-family: "Segoe UI", Verdana, Arial, sans-serif;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    top: -187px;
+    font-size: 16px;
+    color: #2d96cd;
+    float: left;
+    transition: top 1.5s linear;
+}
+
+#auth:hover{
+    top: 0px;
+}
+#authtext {
+    position: absolute;
+    bottom: 27px;
+    left: 35px;
+}
+
 
 .horisontmenu{
     float: left;
