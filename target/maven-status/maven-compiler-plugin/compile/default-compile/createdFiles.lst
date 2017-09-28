@@ -1,9 +1,0 @@
-com\kozyrev\prime\faces\beans\SliderBean.class
-com\kozyrev\spring\service\CraneScaleService.class
-com\kozyrev\jpa\data\Order.class
-com\kozyrev\prime\faces\beans\AddToBucketButtonBean.class
-com\kozyrev\spring\service\OrderService.class
-com\kozyrev\prime\faces\beans\BucketBean.class
-com\kozyrev\jpa\data\CraneScale.class
-com\kozyrev\prime\faces\beans\MainBean.class
-com\kozyrev\jpa\data\BucketDTO.class
